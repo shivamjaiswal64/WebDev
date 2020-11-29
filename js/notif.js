@@ -14,8 +14,9 @@ function notifyMe() {
     icon: 'images/project-2.jpg',
     body: 'Wow! Notification is working',
     image: 'images/project-3.jpg', //Not working in firefox
-    tag: '#KauaLe'
-    sound: 'sound/notifSound.mp3'
+    //tag: '#KauaLe'
+    //sound: 'sound/notifSound.mp3'
+    badge: 3,
     data: 'I like data.' // Not used
 }
   // Let's check if the browser supports notifications
