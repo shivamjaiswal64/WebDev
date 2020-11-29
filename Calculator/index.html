@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tip Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style>
+            .vl{
+             border-left: 1px solid #8e99a4;
+             height: 180px;
+             }
+    </style>
+</head>
+<body>
+	<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="card col-sm-6">
+         <div class="card-body bg-light" >
+        	<div class="row">
+             <div class="col-sm-4">
+             	<div class="inputsContainer">
+					  <h6 class="inputTitle">Bill</h6>
+					 <input
+						type="number"
+						id="totalBill"
+						class="inputField billInputField"
+						placeholder="Enter bill amount"
+						min="0"
+						tabindex="1"
+					 />
+				</div>
+				<div class="inputsContainer">
+					<h6 class="inputTitle">Tip %</h6>
+					<div class="flexAlign">
+						<button id="tipMinusBtn" class="counterBtns minusBtn">–</button>
+						<input
+							type="number"
+							id="tipPercent"
+							class="inputField"
+							min="0"
+							max="100"
+							value="10"
+							tabindex="2"
+							disabled
+						></input>
+						<button id="tipPlusBtn" class="counterBtns plusBtn">+</button>
+					</div>
+				</div>
+
+				<div class="inputsContainer">
+					<h6 class="inputTitle">Number of people</h6>
+					<div class="flexAlign">
+						<button id="peopleMinusBtn" class="counterBtns minusBtn">–</button>
+						<input
+							type="number"
+							id="peopleTotal"
+							class="inputField"
+							min="1"
+							max="1000"
+							value="1"
+							onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+							tabindex="3"
+							disabled
+						/>
+						<button id="peoplePlusBtn" class="counterBtns plusBtn">+</button>
+					</div>
+				</div>
+             </div>
+             
+             <div class="vl"></div>
+             <div class="col-sm">
+             	<div id="bottomContainer">
+             	   <div class="row">
+				   <div class="tipPerPerson col-sm-6">
+					 <h2>Tip</h2>
+					 <p class="perPersonAll">Per Person</p></div>
+					 <div class="col-sm-6">
+					 <h1 id="tipOutputPerPerson" class="total ">0</h1>
+				   </div>
+				   </div>
+                   <div class="row">
+				   <div class="total col-sm-6">
+					 <h1>Total</h1>
+					 <p class="perPersonAll">Per Person</p></div>
+					 <div class="col-sm-6">
+					 <h1 id="totalOutputPerPerson" class="totalPerPerson">0</h1>
+				   </div>
+				   </div>
+			    </div>
+		     </div>
+            </div> 
+         </div>       
+    </div>
+    <div class="col-sm-3"></div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
