@@ -48,6 +48,10 @@ function notifyMe() {
   // At last, if the user has denied notifications, and you 
   // want to be respectful there is no need to bother them any more.
 }
+
+ var today = new Date();
+  var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+  document.getElementById("dtText").innerHTML = date;
 /* // Other way of send notification
 askForApproval(); // Removed
             
