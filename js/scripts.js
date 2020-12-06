@@ -1,6 +1,6 @@
-/* Template: Aria - Business HTML Landing Page Template
-   Author: Inovatik
-   Created: Jul 2019
+/* Modified Template: KauaLe -  Page 
+   Author: @shivamjaiswal64
+   Created: Nov 2020
    Description: Custom JS file
 */
 
